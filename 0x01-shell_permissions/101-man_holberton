@@ -12,6 +12,6 @@ does not take any options.
 .SH SEE ALSO
 Eniac could be programmed to perform complex sequences of operations(2), including loops(2), branches(2), and subroutines(2).
 .SH BUGS
-No known bugs.
+No known bugs..
 .SH AUTHOR
 University of Pennsylvania.
