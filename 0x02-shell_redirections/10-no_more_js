@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lR | grep -E "^-" | grep -E "*\.js$" | cut -d ':' -f 2 | cut -d ' ' -f 2 | xargs rm
+find . -name "*.js" | xargs rm
