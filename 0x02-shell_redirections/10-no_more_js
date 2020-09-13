@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -lR | grep -E "^-" | cut -d ':' -f 2 | cut -d ' ' -f 2 | grep -E "*.js" | xargs -I {} rm {}
+find . -name *.js -type f -delete
