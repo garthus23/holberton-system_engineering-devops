@@ -1,0 +1,2 @@
+#!/bin/bash
+sort | uniq -c | grep -E ".*\ 1\ " | tr -d '     1 '

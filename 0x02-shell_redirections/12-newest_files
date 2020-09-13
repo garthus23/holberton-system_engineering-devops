@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lt | grep -E "^-" | cut -d ':' -f 2 | cut -d ' ' -f 2
