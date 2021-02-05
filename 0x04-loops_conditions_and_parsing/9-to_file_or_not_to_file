@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Information about a file
 
-file=$(find . -name holbertonschool | wc -l)
+file=$(find . -name holbertonschool -type b,c,p,f,l,s | wc -l)
 
 if [[ $file -eq 1 ]]
 then
