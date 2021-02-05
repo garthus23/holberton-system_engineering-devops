@@ -1,12 +1,11 @@
 #!/usr/bin/env bash
 # Information about a file
 
-file=$(find . -name "holbertonschool" | wc -l)
 
-if [[ $file -eq 1 ]]
+if [[ $(file holbertonschool | grep cannot | wc -l) -eq 0 ]]
 then
 	echo "holbertonschool file exists"
-	if [[ $(du holbertonschool | cut -f 1) -eq 0 ]]
+	if [[ $(file holbertonschool | grep empty | wc -l) -eq 1 ]]
 	then
 		echo "holbertonschool file is empty"
 	else
