@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# don't print the first dash
+
+list=$(ls)
+
+for i in $list
+do
+	echo "$i" | sed -e "s/^.*-//"
+done
