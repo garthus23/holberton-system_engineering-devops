@@ -2,10 +2,10 @@
 # Information about a file
 
 
-if [[ $(file holbertonschool | grep cannot | wc -l) -eq 0 ]]
+if [[ $(file holbertonschool | grep -c cannot) -eq 0 ]]
 then
 	echo "holbertonschool file exists"
-	if [[ $(file holbertonschool | grep empty | wc -l) -eq 1 ]]
+	if [[ $(file holbertonschool | grep -c empty) -eq 1 ]]
 	then
 		echo "holbertonschool file is empty"
 	else
