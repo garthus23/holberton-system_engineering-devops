@@ -5,5 +5,5 @@ list=$(ls)
 
 for i in $list
 do
-	echo "$i" | sed -e "s/^.*-//"
+	echo "${i/*-/}"
 done
