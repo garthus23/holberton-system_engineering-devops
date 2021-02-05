@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# parse a log file http src ip + code
+
+cat apache-access.log | awk '{print $1, $9}'
