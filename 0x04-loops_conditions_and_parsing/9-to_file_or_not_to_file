@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# Information about a file
+
+file=$(find . -name holbertonschool | wc -l)
+
+if [[ $file -eq 1 ]]
+then
+	echo "holbertonschool file exists"
+	if [[ $(du holbertonschool | cut -f 1) -eq 0 ]]
+	then
+		echo "holbertonschool file is empty"
+	else
+		echo "holbertonschool file is not empty"
+	fi
+	if [[ $(find . -name "holbertonschool" -type f | wc -l) -eq 1 ]]
+	then
+		echo "holbertonschool is a regular file"
+	fi
+else
+	echo "holbertonschool file does not exist"
+fi
