@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# print the Hours and Minutes
+
+i=0
+min=0
+hours=0
+end=$((60*13))
+while [[ $i -lt $end ]]
+do
+	if [[ $((min % 60)) == 0 ]]
+	then
+		echo "Hour: $hours";
+		((hours++))
+		min=0;
+	else
+		echo $min;
+	fi
+	((i++));
+	((min++));
+done
