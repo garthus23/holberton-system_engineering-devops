@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# stop the 4th Task infinite loop
+
+pkill -f ./7-highlander

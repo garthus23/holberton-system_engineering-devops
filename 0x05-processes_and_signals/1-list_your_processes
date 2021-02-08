@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# print all processes tree for all user
+
+ps -e u f

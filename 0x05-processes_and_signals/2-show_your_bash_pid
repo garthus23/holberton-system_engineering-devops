@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# print ps "bash" lines
+shellcheck disable=SC2009
+
+ps -e u f | grep bash | sort

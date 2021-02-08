@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# sigtrap sigterm 
+
+while i=i 
+do
+	i="To infinity and beyond"
+	echo "$i";
+	sleep 2;
+	trap 'echo I am invincible!!!' 15
+done

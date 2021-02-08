@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# pgrep the bash process
+
+for i in $(pgrep bash)
+do
+	echo "$i bash";
+done
