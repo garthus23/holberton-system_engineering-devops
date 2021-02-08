@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# infinite loop
+
+echo "$$" > /var/run/holbertonscript.pid
+
+while i=i 
+do
+        i="To infinity and beyond"
+        echo "$i";
+        sleep 2;
+        trap 'echo Y U no love me?!' 2
+        trap 'echo I hate the kill command ; rm /var/run/holbertonscript.pid ; exit 0'  15
+
+done
