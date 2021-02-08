@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # manage process
 
 start() {
@@ -32,7 +32,7 @@ restart)
 restart
 ;;
 *)
-echo $"Usage: $0 {start|stop|restart}"
+echo $"Usage: manage_my_process {start|stop|restart}"
 exit 5
 esac
 exit $?
