@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # show all ips V4
 
-ip a | grep inet | sed -E 's/(brd|scope).*//g' | sed -E 's/inet\ +|\/.*//g' | tr -d ' '
+ip a | grep -E "inet\ " | sed -E 's/(brd|scope).*//g' | sed -E 's/inet\ +|\/.*//g' | tr -d ' '
