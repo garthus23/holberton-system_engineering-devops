@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# ssh connection to remote server
-ssh -i ~/.ssh/holberton ubuntu@34.75.166.150
