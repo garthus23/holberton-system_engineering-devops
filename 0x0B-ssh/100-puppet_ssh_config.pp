@@ -4,8 +4,6 @@ file [ '/home/ubuntu/.ssh':
 }
 file { '/home/ubuntu/.ssh/ssh_config':
       ensure => present,
-      owner  => 'root',
-      group  => 'root',
       mode   => '0644',
 }
 file_line { 'Declare identity file':
