@@ -1,12 +1,19 @@
 # ssh client configuration
-exec { 'echo "Host 34.75.62.192" >> /etc/ssh/ssh_config':
+exec { 'puppet module install puppetlabs-stdlib':
   path => '/usr/bin'
 }
 
-exec { 'echo "  IdentityFile ~/.ssh/holberton" >> /etc/ssh/ssh_config':
-  path => '/usr/bin'
+file_line { 'Host':
+      path => '/etc/ssh/ssh_config',
+      line => 'Host 34.75.62.192',
 }
 
-exec { 'echo "  PasswordAuthentication no" >> /etc/ssh/ssh_config':
-  path => '/usr/bin'
+file_line { 'key':
+      path => '/etc/ssh/ssh_config',
+      line => 'IdentityFile ~/.ssh/holberton',
+}
+
+file_line { 'nopass':
+      path => '/etc/ssh/ssh_config',
+      line => 'PasswordAuthentication no',
 }
