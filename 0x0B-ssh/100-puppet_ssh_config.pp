@@ -1,9 +1,13 @@
 # ssh client configuration
 file { '/home/ubuntu/.ssh':
       ensure => directory,
+      owner  => 'ubuntu',
+      group  => 'ubuntu',
 }
 file { '/home/ubuntu/.ssh/ssh_config':
       ensure => present,
+      owner  => 'ubuntu',
+      group  => 'ubuntu',
       mode   => '0644',
 }
 file_line { 'Declare identity file':
