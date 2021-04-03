@@ -1,5 +1,5 @@
 # ssh client configuration
-file [ '/home/ubuntu/.ssh':
+file { '/home/ubuntu/.ssh':
       ensure => directory,
 }
 file { '/home/ubuntu/.ssh/ssh_config':
