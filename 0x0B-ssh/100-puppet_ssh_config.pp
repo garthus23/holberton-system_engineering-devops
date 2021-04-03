@@ -5,7 +5,7 @@ exec { 'puppet module install puppetlabs-stdlib':
 
 file_line { 'Host':
       path => '/etc/ssh/ssh_config',
-      line => 'Host 34.75.62.192',
+      line => 'Host *',
 }
 
 file_line { 'key':
