@@ -4,6 +4,10 @@ package { 'nginx':
   ensure   => latest,
 }
 
+file { '/var/www/html/index.nginx-debian.html':
+  content  => 'Holberton School',
+}
+
 file_line { 'add location':
   ensure   => present,
   path     => '/etc/nginx/sites-enabled/default',
