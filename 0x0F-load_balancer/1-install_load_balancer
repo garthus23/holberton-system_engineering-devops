@@ -1,0 +1,21 @@
+#!/bin/bash
+# Install HaProxy
+
+apt-get update -y
+apt-get install -y haproxy
+sed -i "s/\tmode\thttp/\tmode\ttcp/" /etc/haproxy/haproxy.cfg
+sed -i "s/\toption\thttplog/\toption\ttcplog/" /etc/haproxy/haproxy.cfg
+echo "ENABLED=1" >> /etc/default/haproxy
+{
+  echo "" 
+  echo "frontend www"
+  echo "    bind 0.0.0.0:80" 
+  echo "    default_backend nginx_pool" 
+  echo "" 
+  echo "backend nginx_pool" 
+  echo "    balance roundrobin" 
+  echo "    mode tcp" 
+  echo "    server 2489-web-01 34.75.62.192:80 check"
+  echo "    server 2489-web-02 35.196.192.33:80 check"
+} >> /etc/haproxy/haproxy.cfg
+service haproxy restart
