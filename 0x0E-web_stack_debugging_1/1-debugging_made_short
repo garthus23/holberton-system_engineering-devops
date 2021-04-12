@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# change Nginx port listening
+cd /usr/share/nginx/html/
+pkill nginx
+python -m SimpleHTTPServer 80 &
