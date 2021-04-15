@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+LIST=(www lb-01 web-01 web-02)
+
+if ! [[ "$2" ]] && [[ "$1" ]]
+then
+	for VALUE in "${LIST[@]}"
+	do
+		INFO=$(drill $VALUE.$1 | grep -A1 'ANSWER SECTION:')
+		IP=$(echo $INFO | awk '{ print $8 }')
+		RECORD=$(echo $INFO | awk '{ print $7 }')
+		if [[ $IP ]] && [[ $RECORD ]]
+		then
+			echo "The subdomain $VALUE is a $RECORD record and points to $IP"
+		fi
+	done
+fi
+if [[ "$2" ]]
+then
+	INFO=$(drill $2.$1 | grep -A1 'ANSWER SECTION:')
+	IP=$(echo $INFO | awk '{ print $8 }')
+	RECORD=$(echo $INFO | awk '{ print $7 }')
+	if [[ $IP ]] && [[ $RECORD ]]
+	then
+		echo "The subdomain $VALUE is a $RECORD record and points to $IP"
+	fi
+fi
