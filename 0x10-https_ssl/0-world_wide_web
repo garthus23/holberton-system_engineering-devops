@@ -26,7 +26,7 @@ do_what_i_want () {
 		RECORD=$(echo $INFO | awk '{ print $7 }')
 		if [[ $IP ]] && [[ $RECORD ]]
 		then
-			echo "The subdomain $VALUE is a $RECORD record and points to $IP"
+			echo "The subdomain $2 is a $RECORD record and points to $IP"
 		fi
 	fi
 }
