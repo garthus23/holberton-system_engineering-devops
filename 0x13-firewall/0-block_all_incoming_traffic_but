@@ -1,12 +1,7 @@
-#!/usr/bin/env bash
-# activate firewall
-apt-get -y update
-apt-get -y install ufw
-ufw default deny incomming
-ufw allow 22
-ufw allow 443
-ufw allow 80
-ufw disable
-ufw enable
-ufw start
-ufw reload
+# accept incoming port 22/443/80
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow 22/tcp
+sudo ufw allow 443/tcp
+sudo ufw allow 80/tcp
+sudo ufw enable
