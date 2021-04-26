@@ -1,0 +1,215 @@
+root@gc-2489-web-02-1618179273:/home/ubuntu# tcpdump -vvAs0 port 587
+tcpdump: listening on ens4, link-type EN10MB (Ethernet), capture size 262144 bytes
+19:28:23.618834 IP (tos 0x10, ttl 64, id 45692, offset 0, flags [DF], proto TCP (6), length 60)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [S], cksum 0x2e20 (incorrect -> 0x5459), seq 672596458, win 65320, options [mss 1420,sackOK,TS val 343278670 ecr 0,nop,wscale 7], length 0
+E..<.|@.@.Z>
+
+.-.Y{a...K(..........(. .........
+.v.N........
+19:28:23.644722 IP (tos 0x0, ttl 51, id 0, offset 0, flags [DF], proto TCP (6), length 60)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [S.], cksum 0x7c32 (correct), seq 1978198522, ack 672596459, win 28960, options [mss 1460,sackOK,TS val 2675598998 ecr 343278670,nop,wscale 9], length 0
+E..<..@.3....Y{a
+
+.-.K..u...(.....q |2.........
+.zf..v.N...
+19:28:23.644757 IP (tos 0x10, ttl 64, id 45693, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x1a08), seq 1, ack 1, win 511, options [nop,nop,TS val 343278696 ecr 2675598998], length 0
+E..4.}@.@.ZE
+
+.-.Y{a...K(...u..............
+.v.h.zf.
+19:28:23.644871 IP (tos 0x10, ttl 64, id 45694, offset 0, flags [DF], proto TCP (6), length 88)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [P.], cksum 0x2e3c (incorrect -> 0xa291), seq 1:37, ack 1, win 511, options [nop,nop,TS val 343278696 ecr 2675598998], length 36
+E..X.~@.@.Z 
+
+.-.Y{a...K(...u........<.....
+.v.h.zf.EHLO ismtpd0001p1las1.sendgrid.net
+
+19:28:23.669889 IP (tos 0x0, ttl 51, id 36692, offset 0, flags [DF], proto TCP (6), length 52)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [.], cksum 0x1b91 (correct), seq 1, ack 37, win 57, options [nop,nop,TS val 2675599023 ecr 343278696], length 0
+E..4.T@.3..~.Y{a
+
+.-.K..u...(......9.......
+.zf..v.h
+19:28:23.671020 IP (tos 0x0, ttl 51, id 36693, offset 0, flags [DF], proto TCP (6), length 113)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0x007a (correct), seq 1:62, ack 37, win 57, options [nop,nop,TS val 2675599024 ecr 343278696], length 61
+E..q.U@.3..@.Y{a
+
+.-.K..u...(......9.z.....
+.zf..v.h220 SG ESMTP service ready at ismtpd0179p1mdw1.sendgrid.net
+
+19:28:23.671040 IP (tos 0x10, ttl 64, id 45695, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x1973), seq 37, ack 62, win 511, options [nop,nop,TS val 343278722 ecr 2675599024], length 0
+E..4..@.@.ZC
+
+.-.Y{a...K(...u..8...........
+.v...zf.
+19:28:23.671047 IP (tos 0x0, ttl 51, id 36694, offset 0, flags [DF], proto TCP (6), length 182)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0x3069 (correct), seq 62:192, ack 37, win 57, options [nop,nop,TS val 2675599024 ecr 343278696], length 130
+E....V@.3....Y{a
+
+.-.K..u..8(......90i.....
+.zf..v.h250-smtp.sendgrid.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 31457280
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250 AUTH=PLAIN LOGIN
+
+19:28:23.671052 IP (tos 0x10, ttl 64, id 45696, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x18f2), seq 37, ack 192, win 510, options [nop,nop,TS val 343278722 ecr 2675599024], length 0
+E..4..@.@.ZB
+
+.-.Y{a...K(...u..............
+.v...zf.
+19:28:25.615200 IP (tos 0x10, ttl 64, id 45697, offset 0, flags [DF], proto TCP (6), length 64)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [P.], cksum 0x2e24 (incorrect -> 0x351c), seq 37:49, ack 192, win 510, options [nop,nop,TS val 343280666 ecr 2675599024], length 12
+E..@..@.@.Z5
+
+.-.Y{a...K(...u........$.....
+.v...zf.auth login
+
+19:28:25.640354 IP (tos 0x0, ttl 51, id 36695, offset 0, flags [DF], proto TCP (6), length 70)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0xa1c1 (correct), seq 192:210, ack 49, win 57, options [nop,nop,TS val 2675600994 ecr 343280666], length 18
+E..F.W@.3..i.Y{a
+
+.-.K..u...(......9.......
+.znb.v..334 VXNlcm5hbWU6
+
+19:28:25.640389 IP (tos 0x10, ttl 64, id 45698, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x0971), seq 49, ack 210, win 510, options [nop,nop,TS val 343280691 ecr 2675600994], length 0
+E..4..@.@.Z@
+
+.-.Y{a...K(...u..............
+.v.3.znb
+19:28:27.616540 IP (tos 0x10, ttl 64, id 45699, offset 0, flags [DF], proto TCP (6), length 66)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [P.], cksum 0x2e26 (incorrect -> 0xbf85), seq 49:63, ack 210, win 510, options [nop,nop,TS val 343282667 ecr 2675600994], length 14
+E..B..@.@.Z1
+
+.-.Y{a...K(...u........&.....
+.v...znbbXlsb2dpbg==
+
+19:28:27.641690 IP (tos 0x0, ttl 51, id 36696, offset 0, flags [DF], proto TCP (6), length 70)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0x6f18 (correct), seq 210:228, ack 63, win 57, options [nop,nop,TS val 2675602995 ecr 343282667], length 18
+E..F.X@.3..h.Y{a
+
+.-.K..u...(..)...9o......
+.zv3.v..334 UGFzc3dvcmQ6
+
+19:28:27.641723 IP (tos 0x10, ttl 64, id 45700, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0xf9ae), seq 63, ack 228, win 510, options [nop,nop,TS val 343282692 ecr 2675602995], length 0
+E..4..@.@.Z>
+
+.-.Y{a...K(..)u..............
+.v...zv3
+19:28:29.618093 IP (tos 0x10, ttl 64, id 45701, offset 0, flags [DF], proto TCP (6), length 74)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [P.], cksum 0x2e2e (incorrect -> 0x544a), seq 63:85, ack 228, win 510, options [nop,nop,TS val 343284669 ecr 2675602995], length 22
+E..J..@.@.Z'
+
+.-.Y{a...K(..)u..............
+.v...zv3bXlwYXNzd29yZDk4OTgh
+
+19:28:29.682273 IP (tos 0x0, ttl 51, id 36697, offset 0, flags [DF], proto TCP (6), length 52)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [.], cksum 0xebab (correct), seq 228, ack 85, win 57, options [nop,nop,TS val 2675605036 ecr 343284669], length 0
+E..4.Y@.3..y.Y{a
+
+.-.K..u...(..?...9.......
+.z~,.v..
+19:28:29.698503 IP (tos 0x0, ttl 51, id 36698, offset 0, flags [DF], proto TCP (6), length 104)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0xff5d (correct), seq 228:280, ack 85, win 57, options [nop,nop,TS val 2675605052 ecr 343284669], length 52
+E..h.Z@.3..D.Y{a
+
+.-.K..u...(..?...9.].....
+.z~<.v..535 Authentication failed: Bad username / password
+
+19:28:29.698535 IP (tos 0x10, ttl 64, id 45702, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0xe952), seq 85, ack 280, win 510, options [nop,nop,TS val 343284749 ecr 2675605052], length 0
+E..4..@.@.Z<
+
+.-.Y{a...K(..?u..............
+.v...z~<
+19:28:29.698542 IP (tos 0x0, ttl 51, id 36699, offset 0, flags [DF], proto TCP (6), length 52)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [F.], cksum 0xeb66 (correct), seq 280, ack 85, win 57, options [nop,nop,TS val 2675605052 ecr 343284669], length 0
+E..4.[@.3..w.Y{a
+
+.-.K..u...(..?...9.f.....
+.z~<.v..
+19:28:29.698625 IP (tos 0x10, ttl 64, id 45703, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [F.], cksum 0x2e18 (incorrect -> 0xe950), seq 85, ack 281, win 510, options [nop,nop,TS val 343284749 ecr 2675605052], length 0
+E..4..@.@.Z;
+
+.-.Y{a...K(..?u..............
+.v...z~<
+19:28:29.723484 IP (tos 0x0, ttl 51, id 36700, offset 0, flags [DF], proto TCP (6), length 52)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [.], cksum 0xeafc (correct), seq 281, ack 86, win 57, options [nop,nop,TS val 2675605077 ecr 343284749], length 0
+E..4.\@.3..v.Y{a
+
+.-.K..u...(..@...9.......
+.z~U.v.
+root@gc-2489-web-02-1618179273:/home/ubuntu# tcpdump -vvAs0 port 587
+tcpdump: listening on ens4, link-type EN10MB (Ethernet), capture size 262144 bytes                                                     
+19:28:23.618834 IP (tos 0x10, ttl 64, id 45692, offset 0, flags [DF], proto TCP (6), length 60)                                        
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [S], cksum 0x2e20 (incorrect -> 0x5459), seq 672596458, win 65320, options [mss 1420,sackOK,TS val 343278670 ecr 0,nop,wscale 7], length 0 
+E..<.|@.@.Z>                                                                                                                           
+                                                                                                                                       
+.-.Y{a...K(..........(. .........                                                                                                      
+.v.N........                                                                                                                           
+19:28:23.644722 IP (tos 0x0, ttl 51, id 0, offset 0, flags [DF], proto TCP (6), length 60)                                             
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [S.], cksum 0x7c32 (correct), seq 1978198522, ack 672596459, win 28960, options [mss 1460,sackOK,TS val 2675598998 ecr 343278670,nop,wscale 9], length 0                                                                                                                          
+E..<..@.3....Y{a                                                                                                                       
+                                                                                                                                       
+.-.K..u...(.....q |2.........                                                                                                          
+.zf..v.N...                                                                                                                            
+19:28:23.644757 IP (tos 0x10, ttl 64, id 45693, offset 0, flags [DF], proto TCP (6), length 52)                                        
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x1a08), seq 1, ack 1, win 511, options [nop,nop,TS val 343278696 ecr 2675598998], length 0                
+E..4.}@.@.ZE                                                                                                                           
+                                                                                                                                       
+.-.Y{a...K(...u..............                                                                                                          
+.v.h.zf.                                                                                                                               
+19:28:23.644871 IP (tos 0x10, ttl 64, id 45694, offset 0, flags [DF], proto TCP (6), length 88)                                        
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [P.], cksum 0x2e3c (incorrect -> 0xa291), seq 1:37, ack 1, win 511, options [nop,nop,TS val 343278696 ecr 2675598998], length 36           
+E..X.~@.@.Z                                                                                                                            
+                                                                                                                                       
+.-.Y{a...K(...u........<.....                                                                                                          
+.v.h.zf.EHLO ismtpd0001p1las1.sendgrid.net                                                                                             
+                                                                                                                                       
+19:28:23.669889 IP (tos 0x0, ttl 51, id 36692, offset 0, flags [DF], proto TCP (6), length 52)                                         
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [.], cksum 0x1b91 (correct), seq 1, ack 37, win 57, options [nop,nop,TS val 2675599023 ecr 343278696], length 0                            
+E..4.T@.3..~.Y{a                                                                                                                       
+                                                                                                                                       
+.-.K..u...(......9.......                                                                                                              
+.zf..v.h                                                                                                                               
+19:28:23.671020 IP (tos 0x0, ttl 51, id 36693, offset 0, flags [DF], proto TCP (6), length 113)                                        
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0x007a (correct), seq 1:62, ack 37, win 57, options [nop,nop,TS val 2675599024 ecr 343278696], length 61                       
+E..q.U@.3..@.Y{a                                                                                                                       
+                                                                                                                                       
+.-.K..u...(......9.z.....                                                                                                              
+.zf..v.h220 SG ESMTP service ready at ismtpd0179p1mdw1.sendgrid.net                                                                    
+                                                                                                                                       
+19:28:23.671040 IP (tos 0x10, ttl 64, id 45695, offset 0, flags [DF], proto TCP (6), length 52)                                        
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x1973), seq 37, ack 62, win 511, options [nop,nop,TS val 343278722 ecr 2675599024], length 0              
+E..4..@.@.ZC                                                                                                                           
+                                                                                                                                       
+.-.Y{a...K(...u..8...........                                                                                                          
+.v...zf.
+19:28:23.671047 IP (tos 0x0, ttl 51, id 36694, offset 0, flags [DF], proto TCP (6), length 182)
+    o16789123x97.outbound-mail.sendgrid.net.submission > gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188: Flags [P.], cksum 0x3069 (correct), seq 62:192, ack 37, win 57, options [nop,nop,TS val 2675599024 ecr 343278696], length 130
+E....V@.3....Y{a
+
+.-.K..u..8(......90i.....
+.zf..v.h250-smtp.sendgrid.net
+250-8BITMIME
+250-PIPELINING
+250-SIZE 31457280
+250-STARTTLS
+250-AUTH PLAIN LOGIN
+250 AUTH=PLAIN LOGIN
+
+19:28:23.671052 IP (tos 0x10, ttl 64, id 45696, offset 0, flags [DF], proto TCP (6), length 52)
+    gc-2489-web-02-1618179273.c.hbtn-students-instances.internal.33188 > o16789123x97.outbound-mail.sendgrid.net.submission: Flags [.], cksum 0x2e18 (incorrect -> 0x18f2), seq 37, ack 192, win 510, options [nop,nop,TS val 343278722 ecr 2675599024], length 0
+E..4..@.@.ZB
+
+.-.Y{a...K(...u..............
+.v...zf.
+
