@@ -2,8 +2,11 @@
 # activate firewall
 apt-get update
 apt-get install -y ufw
+ufw default deny incomming
 ufw allow 22
 ufw allow 443
 ufw allow 80
 ufw disable
 ufw enable
+ufw start
+ufw reload
