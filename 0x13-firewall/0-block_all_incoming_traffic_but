@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # activate firewall
-apt-get update
-apt-get install -y ufw
+apt-get -y update
+apt-get -y install ufw
 ufw default deny incomming
 ufw allow 22
 ufw allow 443
