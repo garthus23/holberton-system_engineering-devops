@@ -1,0 +1,12 @@
+#!/bin/bash
+# create a dump of Mysql Server
+
+if [[ "$1" ]]
+then
+        mysqldump -u root -p"$1" --all-databases > backup.sql 2>/dev/null
+fi
+
+if [[ -f backup.sql ]]
+then
+        tar -cvf "$(date +%d-%m-%Y).tar.gz" backup.sql
+fi
