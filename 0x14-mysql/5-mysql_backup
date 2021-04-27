@@ -3,7 +3,7 @@
 
 if [[ "$1" ]]
 then
-        mysqldump -u root -p"$1" --all-databases > backup.sql 2>/dev/null
+        mysqldump -u root -p"$1" --all-databases > backup.sql
 fi
 
 if [[ -f backup.sql ]]
