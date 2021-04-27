@@ -4,9 +4,5 @@
 if [[ "$1" ]]
 then
         mysqldump -u root -p"$1" --all-databases > backup.sql
-fi
-
-if [[ -f backup.sql ]]
-then
         tar -cvf "$(date +%d-%m-%Y).tar.gz" backup.sql
 fi
