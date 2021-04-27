@@ -3,6 +3,6 @@
 
 if [[ "$1" ]]
 then
-        mysqldump -u root -p"$1" --all-databases > backup.sql
+        mysqldump -u root -p"$1" tyrell_corp > backup.sql
         tar -cvf "$(date +%d-%m-%Y).tar.gz" backup.sql
 fi
