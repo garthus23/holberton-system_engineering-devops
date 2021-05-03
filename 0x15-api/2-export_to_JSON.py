@@ -21,6 +21,6 @@ if (len(sys.argv) == 2):
                      'completed': line['completed'],
                      'username': r1.json()[int(sys.argv[1])]['name']
                      })
-
-    with open("USER_ID.json", "w") as file:
+    name = "{}.json".format(sys.argv[1])
+    with open(name, "w") as file:
         json.dump(data, file)
