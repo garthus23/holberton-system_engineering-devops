@@ -18,7 +18,7 @@ if (len(sys.argv) == 2):
             if line["completed"] is True:
                 done += 1
 
-    print("Employee {} is done with tasks({}/{})"
+    print("Employee {} is done with tasks({}/{}):"
           .format(r1.json()[int(sys.argv[1])]['name'], done, todo))
 
     for line in r.json():
