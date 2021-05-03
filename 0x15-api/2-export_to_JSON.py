@@ -19,7 +19,7 @@ if (len(sys.argv) == 2):
              .append({
                      'task': line['title'],
                      'completed': line['completed'],
-                     'username': r1.json()[int(sys.argv[1])]['name']
+                     'username': r1.json()[int(sys.argv[1]) - 1]['name']
                      })
     name = "{}.json".format(sys.argv[1])
     with open(name, "w") as file:
